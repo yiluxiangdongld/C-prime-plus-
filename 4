@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	const int day2hours=24;
+	const int hour2minutes=60;
+	const int minute2seconds=60;
+	long long second;
+	cout << "Enter the number of seconds:" ;
+	cin >> second;
+	cin.get();
+	int days=second/(day2hours*hour2minutes*minute2seconds);
+	int hours=(second%(day2hours*hour2minutes*minute2seconds))/(hour2minutes*minute2seconds);
+	int minutes = ((second % (day2hours*hour2minutes*minute2seconds)) %(hour2minutes*minute2seconds))/ minute2seconds;
+	int seconds = second - days * 24 * 60 * 60 - hours * 3600 - minutes * 60;
+	cout << second<<" seconds= "<<days<<" days "<<hours<<" hours "<<minutes<<" minutes "<<seconds<<" seconds";
+	cin.get();
+	return 0;
+}
