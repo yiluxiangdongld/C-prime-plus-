@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	const double Kg2pound=2.2;
+	const double inch2meter=0.0254;
+	const int feet2inch =12;
+	int feet,inches,pound;
+	cout << "Enter the number of height:________英尺\b\b\b\b\b\b\b\b\b\b" ;
+	cin >> feet;
+	cin.get();
+	cout << "Enter the number of height:________英寸\b\b\b\b\b\b\b\b\b\b";
+	cin >> inches;
+	cin.get();
+	cout << "Enter the number of weight:________磅\b\b\b\b\b\b\b\b\b";
+	cin >> pound;
+	cin.get();
+	double meter=(feet*feet2inch+inches)*inch2meter;
+	double Kg = pound / Kg2pound;
+	double BMI = Kg / (meter*meter);
+	cout << "Your BMI is:"<<BMI<<endl;
+	cin.get();
+	return 0;
+}
