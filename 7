@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	float kilometers, liters;
+	cout << "Enter the kilometers you have driven:     公里\b\b\b\b\b\b\b\b\b" ;
+	cin >> kilometers;
+	cin.get();
+	cout << "Enter the gasoline you have used:       升\b\b\b\b\b\b\b\b";
+	cin >> liters;
+	cin.get();
+	float miles = kilometers*0.6214;
+	float gallon = liters / 3.875;
+	float miles_per_gallon = miles/ gallon;
+	cout <<"the  miles per gallon your car has gotten is "<< miles_per_gallon<<"英里/加仑";
+	cin.get();
+	return 0;
+}
