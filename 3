@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	const float degree2minute=60;
+	const float degree2second=3600;
+	int degree,minute,second;
+	cout << "Enter a latitude in degrees, minutes, and seconds:" ;
+	cin.get();
+	cout << "First, enter the degrees: ";
+	cin >> degree;
+	cin.get();
+	cout << "Next, enter the minutes of arc: ";
+	cin >> minute;
+	cin.get();
+	cout << "Finally, enter the seconds of arc: ";
+	cin >> second;
+	cin.get();
+	float change1=minute/ degree2minute;
+	float change2=second/ degree2second;
+	float allDegree = degree+change1+change2;
+	cout << degree<<" degrees, "<<minute<<" minutes, "<<second<<" seconds = "<<allDegree<<" degrees";
+	cin.get();
+	return 0;
+}
