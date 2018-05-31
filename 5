@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	long long world_population, population_of_the_US;
+	cout << "Enter the world's population: " ;
+	cin >> world_population;
+	cin.get();
+	cout << "Enter the population of the US: ";
+	cin >> population_of_the_US;
+	cin.get();
+	double percent=double(population_of_the_US)/ world_population*100;
+	cout <<"The population of the US is "<<percent<<"% of the world population";
+	cin.get();
+	return 0;
+}
