@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	float miles, gasoline;
+	cout << "Enter the miles you have driven:     英里\b\b\b\b\b\b\b\b\b" ;
+	cin >> miles;
+	cin.get();
+	cout << "Enter the gasoline you have used:       加仑\b\b\b\b\b\b\b\b";
+	cin >> gasoline;
+	cin.get();
+	float gallon_per_100miles = gasoline/ miles*100;
+	cout <<"the gallon per 100miles your car has gotten is "<< gallon_per_100miles ;
+	cin.get();
+	return 0;
+}
